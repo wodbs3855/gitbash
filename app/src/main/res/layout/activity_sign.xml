@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageView
+        android:id="@+id/signt"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/backbtn"
+        app:srcCompat="@drawable/signtitle" />
+
+    <TextView
+        android:id="@+id/sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nanum3"
+        android:text="이름" />
+
+    <EditText
+        android:id="@+id/editsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/sname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum3"
+        android:text="이메일"
+        android:layout_below="@id/editsname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textid"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:layout_below="@id/editid"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nanum3" />
+
+    <EditText
+        android:id="@+id/editpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/pwd"
+        android:layout_centerHorizontal="true"
+        android:hint="영어와 숫자를 혼합하여 6자리 이상" />
+
+    <EditText
+        android:id="@+id/editpwdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/pwdc"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pwdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum3"
+        android:text="비밀번호 확인"
+        android:layout_below="@id/editpwd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/buttonSign"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/editpwdc"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/signbtn" />
+
+
+</RelativeLayout>

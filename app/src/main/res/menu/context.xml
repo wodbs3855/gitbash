@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_mod"
+        android:title="수정"/>
+
+    <item android:id="@+id/menu_delete"
+    android:title="삭제"/>
+    <!-- ContextMenu는 기본적으로 icon이 적용되지 않음  -->
+
+</menu>

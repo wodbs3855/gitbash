@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/backbutton" />
+
+    <Button
+        android:id="@+id/button_write_register"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#3B3838"
+        android:fontFamily="@font/nanum2"
+        android:onClick="button_board_register"
+        android:text="등록"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView_write_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/nanum3"
+        android:text="게시판 분류"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_write_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/textView_write_type" />
+
+    <EditText
+        android:id="@+id/editText_write_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_write_type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:ems="20"
+        android:fontFamily="@font/nanum3"
+        android:hint="제목"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+    <ImageView
+        android:id="@+id/tilte_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_write_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rdtitle_line" />
+
+    <EditText
+        android:id="@+id/editText_writeContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilte_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:fontFamily="@font/nanum3"
+        android:hint="내용을 입력하세요"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

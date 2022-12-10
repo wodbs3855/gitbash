@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'//코드 추가
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.testproject"
+        minSdk 26
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation platform('com.google.firebase:firebase-bom:30.0.2')//코드추가
+    implementation 'com.google.firebase:firebase-analytics'//코드추가
+    implementation 'com.squareup.retrofit2:retrofit:2.8.0' // API
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.0' // API
+    implementation 'androidx.viewpager2:viewpager2:1.0.0' // 뷰페이저
+    implementation 'me.relex:circleindicator:2.1.4' // 뷰페이저
+    implementation 'com.google.firebase:firebase-auth' // 파이어베이스
+    implementation 'com.google.firebase:firebase-storage' // 파이어베이스
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.0'
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+
+
+}
